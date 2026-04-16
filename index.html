@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌤 Smart Weather App</h1>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter city or village"
+            onkeypress="handleEnter(event)"
+        >
+
+        <button onclick="getWeather()">Search</button>
+
+        <button onclick="getLocationWeather()">📍 Use My Location</button>
+
+    </div>
+
+    <div id="savedLocations"></div>
+
+    <div class="weather-card">
+
+        <h1 id="cityName">City</h1>
+
+        <img id="icon" src="" alt="Weather Icon">
+
+        <p id="temperature">Temperature: --</p>
+        <p id="humidity">Humidity: --</p>
+        <p id="wind">Wind Speed: --</p>
+        <p id="description">Weather: --</p>
+
+    </div>
+
+    <h2>5-Day Forecast</h2>
+
+    <div id="forecast" class="forecast-container"></div>
+
+    <h2>🤖 Weather Chatbot</h2>
+
+    <div id="chatBox">
+
+        <div id="chatMessages"></div>
+
+        <input id="chatInput" placeholder="Ask: wear / rain / hot / temperature">
+        <button onclick="sendChat()">Send</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

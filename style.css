@@ -1,0 +1,92 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #66eae3, #4ba29f);
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    margin-top: 40px;
+    color: white;
+}
+
+input {
+    padding: 12px;
+    width: 220px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #18ff74;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c6e612;
+}
+
+.weather-card {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.weather-card img {
+    width: 80px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 140px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.25s ease;
+}
+
+.forecast-card:hover {
+    transform: scale(1.05);
+}
+
+.forecast-card img {
+    width: 60px;
+}
+
+#savedLocations {
+    margin: 15px;
+}
+
+/* CHAT */
+#chatBox {
+    width: 320px;
+    margin: auto;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#chatMessages {
+    height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+    text-align: left;
+}
